@@ -32,6 +32,7 @@
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 <br>
 마이바티스, jsp, 시프링시큐리티
+
 ---
 
 ### ✨ 조원
@@ -169,6 +170,7 @@
 ![Slide60](https://github.com/yjeongyjeong/springProject/assets/147116001/61a43e3d-a96d-4084-a953-83a75c80ff52)
 
 </details>
+
 ---
 
 ### 📑 요구 명세서

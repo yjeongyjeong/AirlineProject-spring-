@@ -14,6 +14,7 @@
 ```
 카카오와 아시아나 항공을 참고하여 항공사 웹사이트를 구현하였습니다.
 ```
+---
 
 ### ⚙ 개발 환경
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -31,15 +32,16 @@
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 <br>
 마이바티스, jsp, 시프링시큐리티
+---
 
 ### ✨ 조원
-|:이름:|:역할:|
+|이름|역할|
 |----|-----|
-|:김민철:|:공지사항 게시판, Q&A 게시판, 카카오상담톡, 회원혜택 페이지, CSS​|
-|:김보람:|:헤더, 마이페이지(관리자/일반회원), 일반 로그인, 좌석선택 및 결제, contact 페이지, CSS​|
-|:이동우:|:항공 데이터 크롤링, 여행일기 게시판, 이벤트 게시판, 항공편 검색, 메인화면, CSS|
-|:정윤정:|:회원가입, 아이디 및 패스워드 찾기, 마이페이지(회원정보수정), 카카오 로그인, CSS​|
-
+|김민철|공지사항 게시판, Q&A 게시판, 카카오상담톡, 회원혜택 페이지, CSS​|
+|김보람|헤더, 마이페이지(관리자/일반회원), 일반 로그인, 좌석선택 및 결제, contact 페이지, CSS​|
+|이동우|항공 데이터 크롤링, 여행일기 게시판, 이벤트 게시판, 항공편 검색, 메인화면, CSS|
+|정윤정|회원가입, 아이디 및 패스워드 찾기, 마이페이지(회원정보수정), 카카오 로그인, CSS​|
+---
 ### 📂 PPT
 <details>
   <summary>
@@ -167,8 +169,10 @@
 ![Slide60](https://github.com/yjeongyjeong/springProject/assets/147116001/61a43e3d-a96d-4084-a953-83a75c80ff52)
 
 </details>
+---
 
 ### 📑 요구 명세서
+---
 
 ### 📊 Diagram
 <details>
@@ -202,5 +206,69 @@
  
  
 ### 📍 기능 설명
+
+<details>
+  <summary>
+    요약
+  </summary>
+
+![Slide7](https://github.com/yjeongyjeong/springProject/assets/147116001/bea8d9d2-d9ec-43ff-85ea-c53baa7efd34)
+
+![Slide8](https://github.com/yjeongyjeong/springProject/assets/147116001/13cddc6d-cf3a-4785-92e3-8ed45cb2fa68)
+
+![Slide9](https://github.com/yjeongyjeong/springProject/assets/147116001/133528f2-3c69-4555-aeef-1db447f424fd)
+
+![Slide10](https://github.com/yjeongyjeong/springProject/assets/147116001/c24fe1ea-0ffe-479b-8fcd-3143dc39ff80)
+
+![Slide11](https://github.com/yjeongyjeong/springProject/assets/147116001/cc0ace2f-74ed-4796-be08-a13b4dce5375)
+
+![Slide12](https://github.com/yjeongyjeong/springProject/assets/147116001/1fdfe2d0-d133-49c3-ab66-aa4d90a9c30d)
+
+![Slide13](https://github.com/yjeongyjeong/springProject/assets/147116001/35311bdc-5afa-4f1a-8094-01567978f8c6)
+
+![Slide14](https://github.com/yjeongyjeong/springProject/assets/147116001/6253c832-1ac2-4193-9ec7-8027bfe9b528)
+
+![Slide15](https://github.com/yjeongyjeong/springProject/assets/147116001/ec000016-de63-4ede-b916-ff16bf80acee)
+
+
+</details>
+
+<details>
+  <summary>
+    상세
+  </summary>
+
+![Slide16](https://github.com/yjeongyjeong/springProject/assets/147116001/113f57c5-bbad-43b2-866e-28be281c4d18)
+
+![Slide17](https://github.com/yjeongyjeong/springProject/assets/147116001/376d5a9d-b7d1-444f-8ea2-c6b7b75a62b0)
+
+![Slide18](https://github.com/yjeongyjeong/springProject/assets/147116001/571f9bf6-469d-4a9a-9fb4-d28c51cff9ea)
+
+![Slide19](https://github.com/yjeongyjeong/springProject/assets/147116001/7d21b4d4-141a-4e58-adc4-c93e18fd75d6)
+
+![Slide20](https://github.com/yjeongyjeong/springProject/assets/147116001/b1241374-111d-4d52-a287-8923d216dbc5)
+
+![Slide21](https://github.com/yjeongyjeong/springProject/assets/147116001/dcbd3dd4-3971-42d3-9374-e9c21600e450)
+
+![Slide22](https://github.com/yjeongyjeong/springProject/assets/147116001/fb9a2329-e0a0-43e8-9b03-26ce1a172cf6)
+
+![Slide23](https://github.com/yjeongyjeong/springProject/assets/147116001/acea52bd-b1dc-4d89-8fa8-59fc3a0a6110)
+
+![Slide24](https://github.com/yjeongyjeong/springProject/assets/147116001/9e69ef39-007c-44ce-8eb0-094673bddc64)
+
+![Slide25](https://github.com/yjeongyjeong/springProject/assets/147116001/54d2fdc8-9a2c-4a90-b5d3-b648ca6e29e0)
+
+![Slide26](https://github.com/yjeongyjeong/springProject/assets/147116001/bb78e520-8c65-4c7f-b4db-d450d30198f5)
+
+![Slide27](https://github.com/yjeongyjeong/springProject/assets/147116001/38a8c9b7-2c83-43c0-8335-0356508dd976)
+
+![Slide28](https://github.com/yjeongyjeong/springProject/assets/147116001/fbfa6314-64e3-4af0-98c9-9e40a8335d93)
+
+![Slide29](https://github.com/yjeongyjeong/springProject/assets/147116001/5ac7342a-0467-4e82-96c8-fdc662277668)
+
+![Slide30](https://github.com/yjeongyjeong/springProject/assets/147116001/ab55c5e8-5fe5-4107-8e91-bc8b060b4432)
+</details>
+
+---
 
 ### 📽 시연 영상

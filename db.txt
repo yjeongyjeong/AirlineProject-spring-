@@ -1,0 +1,358 @@
+//유저 테이블
+create table kakaouser(
+	userId varchar(60) primary key not null, 
+	userNick varchar(30) unique,
+	gradeCode int default 0 ,
+	userNameK varchar(50) not null ,
+	userNameE varchar(50) not null,
+	gender char(1) default 'M',
+	pwd varchar(100) not null,
+	mail varchar(50) not null,
+	phone char(20) ,
+	postCode int not null,
+	address varchar(50) not null ,
+	userReginumFirst int not null,
+	userReginumLast int not null,
+	admin int default 0,
+	enabled int default 1,
+	authority varchar(50) not null default 'ROLE_MEMBER',
+	mail_key varchar(60) default '0'
+);
+--
+insert into kakaouser values('user00', '테스트유저', 0,'김유저','USERKIM','M','user00','user00@naver.com','010-1111-2222',11111,'수원시 영통구',911111,1111111,0, 1, 'ROLE_MEMBER','0');
+insert into kakaouser values('admin00', '테스트관리자', 0,'관리자','ADMIN','M','admin00','admin@naver.com','010-1111-2222',11111,'수원시 영통구',911111,1111111,1,1,'ROLE_ADMIN','0');
+
+//약관
+create table terms(
+	termsCode int(1) not null auto_increment primary key,
+	termstitle varchar(100) not null,
+	termsContents longtext
+);
+
+//약관 동의여부
+create table termsmanage(
+	userid varchar(60) 
+	termsCode int 
+	agree char(1) default 'N'
+);
+alter table termsManage add constraint pk_temrs_id foreign key(userid) references kakaouser(userid) on delete cascade;
+alter table termsManage add constraint pk_terms_code foreign key(termsCode) references terms(termsCode) on delete cascade;
+
+//공항정보
+create table airport(
+    airportname varchar(200) primary key,
+    airportcode varchar(50)
+);
+insert into price airport('김포', 'GMP');
+insert into price airport('제주', 'CJU');
+insert into price airport('하네다', 'HND');
+
+//지역코드
+create table regioncode(
+    regioncode int primary key,
+    region varchar(100)
+);
+insert into regionCode values('한국', 1);
+insert into regionCode values('동북아시아', 2);
+
+//항공권 가격
+create table price(
+    depName varchar(200),
+    depCode varchar(50),
+    arrName varchar(200),
+    arrCode varchar(50),
+    price int,
+    primary key(depCode, arrCode)
+);
+alter table price add constraint fk_price_depCode foreign key (depCode) references airport(airportCode);
+alter table price add constraint fk_price_arrCode foreign key (arrCode) references airport(airportCode);
+
+insert into price values('김포', 'GMP', '제주', 'CJU', 107300);
+insert into price values('김포', 'GMP', '하네다', 'HND', 410000);
+
+//항공 스케줄
+create table airplaneSchedule(
+    fno int auto_increment primary key,
+    flightName varchar(20),
+    depDay datetime,
+    arrDay datetime,
+    fullDepTime datetime,
+    depTime datetime,
+    fullArrTime datetime,       
+    arrTime datetime, 
+    flightTime datetime,       
+    fullDeparture varchar(200),
+    depCode varchar(50),
+    depName varchar(200),
+    fullArrival varchar(200),
+    arrCode varchar(50),
+    arrName varchar(200),
+    depRegionCode int,        
+    arrRegionCode int,        
+    isDelete int default 0,
+    seatCount int defualt 24       
+);
+
+alter table airplaneSchedule add constraint fk_sche_depRegionCode foreign key (depRegionCode) references regionCode(code);
+alter table airplaneSchedule add constraint fk_sche_arrRegionCode foreign key (arrRegionCode) references regionCode(code);
+
+//김포->제주, 2023-12-01
+insert into airplaneSchedule values(1,'OZ8901','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 06:17:00','6:17:00','2023-12-01 07:09:00','7:09:00','0:52:00','김포(GMP)','GMP','김포','제주(CJU)','CJU','제주',1,1,0,24);
+insert into airplaneSchedule values(2,'OZ8903','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 06:24:00','6:24:00','2023-12-01 07:15:00','7:15:00','0:51:00','김포(GMP)','GMP','김포','제주(CJU)','CJU','제주',1,1,0,24);
+insert into airplaneSchedule values(3,'OZ8901','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 06:31:00','6:31:00','2023-12-01 07:22:00','7:22:00','0:51:00','김포(GMP)','GMP','김포','제주(CJU)','CJU','제주',1,1,0,24);
+insert into airplaneSchedule values(4,'OZ8905','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 07:04:00','7:04:00','2023-12-01 07:59:00','7:59:00','0:55:00','김포(GMP)','GMP','김포','제주(CJU)','CJU','제주',1,1,0,24);
+insert into airplaneSchedule values(5,'OZ8911','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 07:25:00','7:25:00','2023-12-01 08:20:00','8:20:00','0:55:00','김포(GMP)','GMP','김포','제주(CJU)','CJU','제주',1,1,0,24);
+//제주->김포, 2023-12-01
+insert into airplaneSchedule values(6,'OZ8900','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 06:45:00','6:45:00','2023-12-01 07:35:00','7:35:00','0:50:00','제주(CJU)','CJU','제주','김포(GMP)','GMP','김포',1,1,0,24);
+insert into airplaneSchedule values(7,'OZ8902','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 07:10:00','7:10:00','2023-12-01 08:02:00','8:02:00','0:52:00','제주(CJU)','CJU','제주','김포(GMP)','GMP','김포',1,1,0,24);
+insert into airplaneSchedule values(8,'OZ8903','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 08:18:00','8:18:00','2023-12-01 09:06:00','9:06:00','0:48:00','제주(CJU)','CJU','제주','김포(GMP)','GMP','김포',1,1,0,24);
+insert into airplaneSchedule values(9,'OZ8912','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 09:16:00','9:16:00','2023-12-01 10:03:00','10:03:00','0:47:00','제주(CJU)','CJU','제주','김포(GMP)','GMP','김포',1,1,0,24);
+insert into airplaneSchedule values(10,'OZ8922','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 09:22:00','9:22:00','2023-12-01 10:09:00','10:09:00','0:47:00','제주(CJU)','CJU','제주','김포(GMP)','GMP','김포',1,1,0,24);
+//김포->하네다, 2023-12-01
+insert into airplaneSchedule values(11,'OZ1085','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 09:00:00','9:00:00','2023-12-01 10:39:00','10:39:00','1:39:00','김포(GMP)','GMP','김포','하네다(HND)','HND','하네다',1,2,0,24);
+insert into airplaneSchedule values(12,'OZ1045','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 16:08:00','16:08:00','2023-12-01 17:50:00','17:50:00','1:42:00','김포(GMP)','GMP','김포','하네다(HND)','HND','하네다',1,2,0,24);
+//하네다->김포, 2023-12-01
+insert into airplaneSchedule values(13,'OZ1075','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 12:44:00','12:44:00','2023-12-01 15:02:00','15:02:00','2:18:00','하네다(HND)','HND','하네다','김포(GMP)','GMP','김포',2,1,0,24);
+insert into airplaneSchedule values(14,'OZ1035','2023-12-01 00:00:00','2023-12-01 00:00:00','2023-12-01 19:54:00','19:54:00','2023-12-01 22:12:00','22:12:00','2:18:00','하네다(HND)','HND','하네다','김포(GMP)','GMP','김포',2,1,0,24);
+
+//관리자-항공편 관리 테이블
+create table adminflight(
+    ano int(5) primary key auto_increment,
+    fno int(5),			
+    updateDate timestamp default current_timestamp,
+    reason varchar(100),			
+    isdelete int default 0,	
+    arrName varchar(50),			
+    depName varchar(50),			
+    flightName varchar(50)
+);	
+
+//권한
+create table authorities(
+    userid varchar(10) not null,
+    authority varchar(50) not null,
+    constraint fk_auth_user foreign key(userId) references kakaouser(userId)
+);	
+
+alter table authorities add constraint fk_authority_userid foreign key(userid) references kakaouser(userid) on delete cascade;
+
+//예약 취소 테이블
+create table cancel(
+    cno int(5) primary key auto_increment
+    userid varchar(60),			
+    resno	varchar(50),		
+    isCancel int default 1,	
+    RequestTime timestamp default CURRENT_TIMESTAMP,
+    CancelTime timestamp default CURRENT_TIMESTAMP,
+    cancelOk int default 0		
+);
+
+alter table cancel add constraint fk_cancel_userid foreign key(userid) references kakaouser(userid) on delete cascade;
+alter table cancel add constraint fk_cancel_resno foreign key(resno) references flightreservation(resno) on delete cascade;
+
+//할인정책
+create table discountpolicy(
+    ageGroup varchar(20) primary key,
+    ageDiscountRate float(5)			
+)
+
+insert into discountpolicy values(1, 0.0);
+insert into discountpolicy values(12, 0.75);
+insert into discountpolicy values(64, 1);
+
+//예약 테이블
+create table flightreservation(
+    resno varchar(50) primary key,
+    userid varchar(60),
+    userName varchar(50),
+    flightName varchar(50),
+    departure varchar(50),
+    arrival varchar(50),
+    arrTime varchar(50),
+    depTime varchar(50),
+    purchaseTime timestamp default current_timestamp,
+    seatId varchar(10),
+    ispaid int default 0,
+    isCancel int default 0,
+    isCheckin int default 0	
+);
+
+alter table flightreservation add constraint fk_res_userid foreign key(userid) references kakaouser(userid) on delete cascade;
+
+//등급 테이블
+create table grade(
+    gradecode int(1) primary key,
+    usergrade varchar(10),
+    gradestandard int(10)		
+);
+
+insert into grade values(0,'제이지',0);
+insert into grade values(1,'어피치',300000);
+insert into grade values(2,'라이언',500000);
+insert into grade values(3,'춘식이',1000000);
+
+//등급 변동 로그
+create table gradelog(
+       gno int primary key auto_increment,
+        userid varchar(60),
+        updateDate timestamp default current_timestamp,
+        gradecode int(1)	
+);
+
+alter table gradelog add constraint fk_glog_userid foreign key(userid) references kakaouser(userid) on delete cascade;
+alter table gradelog add constraint fk_glog_code foreign key(gradecode) references grade(gradecode) on delete cascade;
+
+//카카오페이
+create table point(
+    pno int(5) primary key auto_increment,
+    userid	 varchar(60),		
+    amount int(15) default 0,	
+    buyDate timestamp default CURRENT_TIMESTAMP
+)
+
+alter table point add constraint fk_point_userid foreign key(userid) references kakaouser(userid) on delete cascade;
+
+//좌석 등급
+create table seatclass(
+    seatclass varchar(10) primary key,
+    pricePercent float(5),
+    totalCount int(3)		
+);
+insert into seatclass values('일등석', 2, 4);
+insert into seatclass values('비지니스', 1.5, 8);
+insert into seatclass values('이코노미', 1, 12);
+
+//유저 로그
+create table userlog(
+    logNum int(5) auto_increment primary key,
+    userid varchar(60) not null, 
+    regidate timestamp default current_timestamp,
+    updateDate timestamp default current_timestamp,
+    gradeUpdate timestamp default current_timestamp,
+    totalCount int(2) default 0,
+    totalMileage int(10) default 0,
+    totalSum int(10) default 0,
+    constraint fk_log_userid foreign key (userid) references kakaouser(userid) on delete cascade	
+)
+
+alter table point add constraint fk_ulog_userid foreign key(userid) references kakaouser(userid) on delete cascade;
+
+//항공구매테이블
+create table userpay(
+    pno int(5) primary key auto_increment,
+    userid varchar(60),
+    resno varchar(50),
+    price int(10),
+    getDate timestamp default current_timestamp,
+    mileage int(10) default 0
+)
+
+alter table userpay add constraint fk_userpay_userid foreign key(userid) references kakaouser(userid) on delete cascade;
+alter table userpay add constraint fk_userpay_resno foreign key(resno) references flightreservation(resno) on delete cascade;
+
+//시큐리티 로그아웃
+create table PERSISTENT_LOGINS (
+  USERNAME varchar(64) not null,
+  SERIES varchar(64) primary key,
+  TOKEN varchar(64) not null,
+  LAST_USED timestamp not null
+);
+
+//qna게시판
+create table boardqna(
+	boardnum int not null primary key auto_increment,
+	boardsubject varchar(1000) not null,
+	boardcontent longtext,
+	boardwriter varchar(100) not null,
+	regidate datetime default current_timestamp,
+	modifydate datetime default current_timestamp,
+	boardreref int default 0,
+	boardrelevel int default 0,
+	boardreseq int default 0,
+	readcount int default 0,
+	repadmin int default 0
+);
+//boardreref가 boardnum참조
+alter table boardqna add constraint foreign key(boardreref) references boardqna(boardNum) on delete cascade;
+
+//Notice게시판
+create table boardnotice(
+	boardnum int not null primary key auto_increment,
+	boardsubject varchar(1000) not null,
+	boardcontent longtext,
+	boardwriter varchar(100) not null,
+	regidate datetime default current_timestamp,
+	modifydate datetime default current_timestamp,
+	readcount int default 0,
+	emergency int default 0
+);
+
+//여행일기
+create table boardDiary(
+    boardNum int auto_increment primary key,
+    boardTitle varchar(1000) not null,
+    boardContent longtext,
+    boardWriter varchar(50) not null,  
+    regidate datetime default current_timestamp,
+    modifydate datetime default current_timestamp,
+    readcount int default 0,
+    replycount int default 0,
+    likecount int DEFAULT 0,
+    userId varchar(200),
+    constraint fk_diaryWriter foreign key(boardWriter) references kakaouser(userNick) on update cascade,
+    constraint fk_diaryId foreign key(userId) references kakaouser(userId)
+);
+
+//여행일기-댓글
+create table boardDiaryReply(
+    replyNum int auto_increment primary key,
+    boardNum int,
+    replyWriter varchar(50),
+    replyContent varchar(4000),
+    regiDate datetime default current_timestamp,
+    modifyDate datetime default current_timestamp,
+    userId varchar(200),
+    constraint fk_boardNum foreign key(boardNum) references boardDiary(boardNum) on delete cascade,
+    constraint fk_replyWriter foreign key(replyWriter) references kakaouser(userNick) on update cascade,
+    constraint fk_diaryReplyId foreign key(userId) references kakaouser(userId)
+);
+
+//여행일기-추천
+create table boardDiaryLike(
+    likeNum int auto_increment primary key,      
+    boardNum int,
+    userId varchar(50),
+    likeDate datetime default current_timestamp,
+    constraint fk_like_userId foreign key(userId) references kakaouser(userId) on delete cascade,
+    constraint fk_like_boardNum foreign key(boardNum) references boardDiary(boardNum) on delete cascade
+);
+
+//이벤트게시판
+create table boardEvent(
+    boardNum int auto_increment primary key,
+    boardTitle varchar(1000) not null,
+    boardContent longtext,
+    startDate datetime default current_timestamp,
+    endDate datetime,
+    regiDate datetime default current_timestamp,
+    modifydate datetime default current_timestamp,
+    readcount int default 0,
+    repImg varchar(5000) DEFAULT 'noimage.png',
+    filepath varchar(2000),
+    isOngoing int default 1
+);
+
+//이벤트게시판-파일
+create table boardEventFile(
+    fileNum int auto_increment primary key,
+    boardNum int,
+    uuid varchar(2000),
+    uploadPath varchar(2000),
+    fileName varchar(2000),
+    fileType varchar(1000) DEFAULT 'I',
+    fileOrder varchar(50) DEFAULT 'uploadFile01',
+    repImgYn varchar(1) default 'N',
+    fileSize int,
+    constraint fk_Evnet_file_boardNum foreign key(boardNum) references boardEvent(boardNum) on delete cascade
+);
+

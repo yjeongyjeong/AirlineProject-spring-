@@ -32,19 +32,20 @@
 <br>
 마이바티스, jsp, 시프링시큐리티
 
-### 조원
-|이름|역할|
+### ✨ 조원
+|:이름:|:역할:|
 |----|-----|
-|김민철|
-|김보람|
-|이동우|
-|정윤정|
+|:김민철:|:공지사항 게시판, Q&A 게시판, 카카오상담톡, 회원혜택 페이지, CSS​|
+|:김보람:|:헤더, 마이페이지(관리자/일반회원), 일반 로그인, 좌석선택 및 결제, contact 페이지, CSS​|
+|:이동우:|:항공 데이터 크롤링, 여행일기 게시판, 이벤트 게시판, 항공편 검색, 메인화면, CSS|
+|:정윤정:|:회원가입, 아이디 및 패스워드 찾기, 마이페이지(회원정보수정), 카카오 로그인, CSS​|
 
 ### 📂 PPT
 <details>
   <summary>
     PPT : 개발환경/개발일정/역할분담/기능요구사항/Diagram/화면구현/소감
   </summary>
+  
 ![Slide1](https://github.com/yjeongyjeong/springProject/assets/147116001/4457e99c-e108-4dd9-a65d-64b6c621338a)
 
 ![Slide2](https://github.com/yjeongyjeong/springProject/assets/147116001/0e04c012-f26f-4a7c-b843-104559b6d50f)
@@ -170,7 +171,36 @@
 ### 📑 요구 명세서
 
 ### 📊 Diagram
+<details>
+  <summary>
+    Usecase
+  </summary>
 
+![UsecaseDiagram](https://github.com/yjeongyjeong/springProject/assets/147116001/9bf8257a-47ec-45c4-8615-8b5a4fb0b453)
+ </details>
+ 
+<details>
+  <summary>
+    ER
+  </summary>
+
+![ERDiagram](https://github.com/yjeongyjeong/springProject/assets/147116001/bb0f6351-8300-4efd-8fc9-aea2e3d3d569)
+ </details>
+ 
+<details>
+  <summary>
+    Class : home/join/myPage/searchAndReservation/board/Diary
+</summary>
+
+![ClassDiagram_home](https://github.com/yjeongyjeong/springProject/assets/147116001/758fb6f0-bd46-462e-b327-d15d23fc89c3)
+![ClassDiagram_join](https://github.com/yjeongyjeong/springProject/assets/147116001/b2235f82-9db8-430c-88f9-ccdacd3a5bf6)
+![ClassDiagram_myPage](https://github.com/yjeongyjeong/springProject/assets/147116001/1e9938b7-1984-423e-98b2-3d187e1ed382)
+![ClassDiagram_searchAndReservation](https://github.com/yjeongyjeong/springProject/assets/147116001/32455ab8-6572-4036-b9d8-b9d1950459b8)
+![ClassDiagram_boardAdmin](https://github.com/yjeongyjeong/springProject/assets/147116001/9d3eb770-1dc3-4345-b19f-aded48aed66b)
+![ClassDiagram_boardEventAndDiary](https://github.com/yjeongyjeong/springProject/assets/147116001/384d8281-7636-4561-9d9e-7868664608d0)
+ </details>
+ 
+ 
 ### 📍 기능 설명
 
 ### 📽 시연 영상

@@ -362,6 +362,7 @@ ClassDiagram_boardEventAndDiary
   <summary>
     공지사항 게시판
   </summary>
+  
 * 페이징 및 검색 기능
 * 조회수
 * 게시글 작성 시 일반, 긴급, 팝업 분류
@@ -372,6 +373,7 @@ ClassDiagram_boardEventAndDiary
   <summary>
 Q&A 게시판
   </summary>
+  
 * 페이징 및 검색 기능
 * 조회수
 * 본인만 삭제 가능, 관리자만 답변 가능
@@ -381,6 +383,7 @@ Q&A 게시판
   <summary>
 여행일기 게시판
   </summary>
+  
 * 페이징 및 검색 기능
 * 조회수
 * 회원의 경우 댓글과 추천 가능
@@ -390,6 +393,7 @@ Q&A 게시판
   <summary>
 이벤트 게시판
   </summary>
+  
 * 페이징 및 검색 기능
 * 조회수
 * 파일 첨부 가능

@@ -234,7 +234,7 @@ Diagram
 ### 📑 기능 명세서
 <details>
   <summary>
-    Usecase
+    기능 명세서
   </summary>
 
 ![functionalSpecification](https://github.com/yjeongyjeong/springProject/assets/147116001/cc1b5e2a-8aec-48bb-b705-1669330ddb94)

@@ -12,26 +12,49 @@
 
 ### ✔ 개요
 ```
+개발 기간 : 2023.11.27 - 2023.12.15
 카카오와 아시아나 항공을 참고하여 항공사 웹사이트를 구현하였습니다.
 ```
 ***
 
 ### ⚙ 개발 환경
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+<br>
+![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+<br>
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+<br>
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black)
+<img src="https://img.shields.io/badge/springsecurity-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
+<img src="https://img.shields.io/badge/JSP-E34F26?style=flat-square&logo=JSP&logoColor=white">
+<img src="https://img.shields.io/badge/Mybatis-000000?style=flat&logo=Fluentd&logoColor=white"/>
+<br>
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+<br>
 ![KakaoTalk](https://img.shields.io/badge/kakaotalk-ffcd00.svg?style=for-the-badge&logo=kakaotalk&logoColor=000000)
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
-<br>
-마이바티스, jsp, 시프링시큐리티
+
+<details>
+	<summary>
+		API 상세
+	</summary>
+  
+카카오 지도, 카카오 로그인, 카카오톡 채널​, 카카오 우편번호 서비스
+Javax.mail, spring-context-support(JavaMailSender, MimeMessage, MimeMessageHelper)​
+Selenium, Summernote, DateRangePicker, PortOne, chart.js, openWeather
+
+</details>
+
+```
+Mysql 3306 포트로 연결
+Tomcat 8081 포트로 연결
+```
 
 ***
 
@@ -174,6 +197,13 @@
 ***
 
 ### 📑 기능 명세서
+<details>
+  <summary>
+    Usecase
+  </summary>
+
+![functionalSpecification](https://github.com/yjeongyjeong/springProject/assets/147116001/cc1b5e2a-8aec-48bb-b705-1669330ddb94)
+</details>
 
 ***
 
@@ -198,12 +228,22 @@
   <summary>
     Class : home/join/myPage/searchAndReservation/board/Diary
 </summary>
-
+ClassDiagram_home
 ![ClassDiagram_home](https://github.com/yjeongyjeong/springProject/assets/147116001/758fb6f0-bd46-462e-b327-d15d23fc89c3)
+
+ClassDiagram_join
 ![ClassDiagram_join](https://github.com/yjeongyjeong/springProject/assets/147116001/b2235f82-9db8-430c-88f9-ccdacd3a5bf6)
+
+ClassDiagram_myPage
 ![ClassDiagram_myPage](https://github.com/yjeongyjeong/springProject/assets/147116001/1e9938b7-1984-423e-98b2-3d187e1ed382)
+
+ClassDiagram_searchAndReservation
 ![ClassDiagram_searchAndReservation](https://github.com/yjeongyjeong/springProject/assets/147116001/32455ab8-6572-4036-b9d8-b9d1950459b8)
+
+ClassDiagram_boardAdmin
 ![ClassDiagram_boardAdmin](https://github.com/yjeongyjeong/springProject/assets/147116001/9d3eb770-1dc3-4345-b19f-aded48aed66b)
+
+ClassDiagram_boardEventAndDiary
 ![ClassDiagram_boardEventAndDiary](https://github.com/yjeongyjeong/springProject/assets/147116001/384d8281-7636-4561-9d9e-7868664608d0)
  </details>
  

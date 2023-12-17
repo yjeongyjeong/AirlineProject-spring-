@@ -282,6 +282,7 @@ ClassDiagram_boardEventAndDiary
 ![ClassDiagram_boardEventAndDiary](https://github.com/yjeongyjeong/springProject/assets/147116001/384d8281-7636-4561-9d9e-7868664608d0)
  </details>
  
+---
  
 ### 📍 주요 기능 설명
 <details>

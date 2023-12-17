@@ -45,9 +45,9 @@
 		API 상세
 	</summary>
   
-카카오 지도, 카카오 로그인, 카카오톡 채널​, 카카오 우편번호 서비스
-Javax.mail, spring-context-support(JavaMailSender, MimeMessage, MimeMessageHelper)​
-Selenium, Summernote, DateRangePicker, PortOne, chart.js, openWeather
+* 카카오 : 카카오 지도, 카카오 로그인, 카카오톡 채널​, 카카오 postcode service(우편번호)
+* 메일 전송 : Javax.mail, spring-context-support(JavaMailSender, MimeMessage, MimeMessageHelper)​
+* 기타 : Selenium(크롤링), Summernote(게시판 에디터), DateRangePicker(날짜 선택), PortOne(결제), chart.js(그래프), openWeather(날씨)
 
 </details>
 
@@ -69,7 +69,7 @@ Tomcat 8081 포트로 연결
 ### 📂 PPT
 <details>
   <summary>
-    PPT : 개발환경/개발일정/역할분담/기능요구사항/Diagram/화면구현/소감
+   개발환경/개발일정/역할분담
   </summary>
   
 ![Slide1](https://github.com/yjeongyjeong/springProject/assets/147116001/4457e99c-e108-4dd9-a65d-64b6c621338a)
@@ -84,6 +84,13 @@ Tomcat 8081 포트로 연결
 
 ![Slide6](https://github.com/yjeongyjeong/springProject/assets/147116001/c91c2f13-fc88-4977-892d-886845662bab)
 
+</details>
+
+<details>
+  <summary>
+    주요기능
+  </summary>
+  
 ![Slide7](https://github.com/yjeongyjeong/springProject/assets/147116001/bea8d9d2-d9ec-43ff-85ea-c53baa7efd34)
 
 ![Slide8](https://github.com/yjeongyjeong/springProject/assets/147116001/13cddc6d-cf3a-4785-92e3-8ed45cb2fa68)
@@ -101,6 +108,13 @@ Tomcat 8081 포트로 연결
 ![Slide14](https://github.com/yjeongyjeong/springProject/assets/147116001/6253c832-1ac2-4193-9ec7-8027bfe9b528)
 
 ![Slide15](https://github.com/yjeongyjeong/springProject/assets/147116001/ec000016-de63-4ede-b916-ff16bf80acee)
+
+</details>
+
+<details>
+  <summary>
+기능요구사항
+  </summary>
 
 ![Slide16](https://github.com/yjeongyjeong/springProject/assets/147116001/113f57c5-bbad-43b2-866e-28be281c4d18)
 
@@ -132,6 +146,13 @@ Tomcat 8081 포트로 연결
 
 ![Slide30](https://github.com/yjeongyjeong/springProject/assets/147116001/ab55c5e8-5fe5-4107-8e91-bc8b060b4432)
 
+</details>
+
+<details>
+  <summary>
+Diagram
+  </summary>
+
 ![Slide31](https://github.com/yjeongyjeong/springProject/assets/147116001/e1986ac3-ea8b-49bd-b326-4b8042df9d21)
 
 ![Slide32](https://github.com/yjeongyjeong/springProject/assets/147116001/c1e461d8-de44-4e7e-b577-aaf0f3f41d20)
@@ -147,6 +168,13 @@ Tomcat 8081 포트로 연결
 ![Slide37](https://github.com/yjeongyjeong/springProject/assets/147116001/2b0265ef-eebb-4549-9be9-baf5324fc227)
 
 ![Slide38](https://github.com/yjeongyjeong/springProject/assets/147116001/c2343c03-1e04-41bf-bda9-72935357fb24)
+
+</details>
+
+<details>
+  <summary>
+화면구현
+  </summary>
 
 ![Slide39](https://github.com/yjeongyjeong/springProject/assets/147116001/7626d3c9-9764-4a9a-974e-bd8da89c4087)
 
@@ -181,6 +209,13 @@ Tomcat 8081 포트로 연결
 ![Slide54](https://github.com/yjeongyjeong/springProject/assets/147116001/5a72fd5d-27ab-4d1b-950a-aa20f97488b4)
 
 ![Slide55](https://github.com/yjeongyjeong/springProject/assets/147116001/84049c04-1d9b-4488-bee5-4f442f604d32)
+
+</details>
+
+<details>
+  <summary>
+소감
+  </summary>
 
 ![Slide56](https://github.com/yjeongyjeong/springProject/assets/147116001/411ac5d7-8399-4a80-9d9f-595575638b69)
 
@@ -248,67 +283,119 @@ ClassDiagram_boardEventAndDiary
  </details>
  
  
-### 📍 기능 설명
+### 📍 주요 기능 설명
 <details>
   <summary>
-    요약
+    헤더/메인
   </summary>
-
-![Slide7](https://github.com/yjeongyjeong/springProject/assets/147116001/bea8d9d2-d9ec-43ff-85ea-c53baa7efd34)
-
-![Slide8](https://github.com/yjeongyjeong/springProject/assets/147116001/13cddc6d-cf3a-4785-92e3-8ed45cb2fa68)
-
-![Slide9](https://github.com/yjeongyjeong/springProject/assets/147116001/133528f2-3c69-4555-aeef-1db447f424fd)
-
-![Slide10](https://github.com/yjeongyjeong/springProject/assets/147116001/c24fe1ea-0ffe-479b-8fcd-3143dc39ff80)
-
-![Slide11](https://github.com/yjeongyjeong/springProject/assets/147116001/cc0ace2f-74ed-4796-be08-a13b4dce5375)
-
-![Slide12](https://github.com/yjeongyjeong/springProject/assets/147116001/1fdfe2d0-d133-49c3-ab66-aa4d90a9c30d)
-
-![Slide13](https://github.com/yjeongyjeong/springProject/assets/147116001/35311bdc-5afa-4f1a-8094-01567978f8c6)
-
-![Slide14](https://github.com/yjeongyjeong/springProject/assets/147116001/6253c832-1ac2-4193-9ec7-8027bfe9b528)
-
-![Slide15](https://github.com/yjeongyjeong/springProject/assets/147116001/ec000016-de63-4ede-b916-ff16bf80acee)
-
+  
+* 헤더의 경우 각 페이지로 이동
+* 항공편 검색
+* 이벤트 슬라이더 : 기준을 정해서 8개 노출
+* 모달 : 긴급공지, 공지사항 등 안내
+* 공지사항 : 중요공지 노출
+* 지역별 인기 노선 소개
 
 </details>
 
 <details>
   <summary>
-    상세
+    회원가입 및 휴면계정 처리
   </summary>
+  
+* 일반 회원가입과 카카오 회원 가입으로 구성
+* 회원가입 시 입력 정보 유효성 검사
+* 회원가입 시 패스워드 인코딩
+* 회원가입 시 가입완료 메일 전송
+* 휴면계정은 로그인 시 계정 상태 조회
+* 랜덤키를 생성하여 유저 체크 후 휴면 비활성화
 
-![Slide16](https://github.com/yjeongyjeong/springProject/assets/147116001/113f57c5-bbad-43b2-866e-28be281c4d18)
+</details>
 
-![Slide17](https://github.com/yjeongyjeong/springProject/assets/147116001/376d5a9d-b7d1-444f-8ea2-c6b7b75a62b0)
+<details>
+  <summary>
+    아이디 찾기 및 비밀번호 찾기
+  </summary>
+  
+* 입력받은 정보로 유저 조회
+* 랜덤키를 통한 유저 체크
 
-![Slide18](https://github.com/yjeongyjeong/springProject/assets/147116001/571f9bf6-469d-4a9a-9fb4-d28c51cff9ea)
+</details>
 
-![Slide19](https://github.com/yjeongyjeong/springProject/assets/147116001/7d21b4d4-141a-4e58-adc4-c93e18fd75d6)
+<details>
+  <summary>
+	마이페이지(유저)
+  </summary>
+  
+* 정보 조회 및 변경
+* 등급 및 마일리지 상세 조회
+* 항공 예약 현황 조회
+* 내가 쓴 글 조회
+</details>
 
-![Slide20](https://github.com/yjeongyjeong/springProject/assets/147116001/b1241374-111d-4d52-a287-8923d216dbc5)
+<details>
+  <summary>
+	마이페이지(관리자)
+  </summary>
+  
+* 회원 현황 조회 및 휴면 처리
+* 일별 매출 그래프 확인
+* 항공 예약 현황 조회 및 수정
+* 게시판 작성 및 조회
+</details>
 
-![Slide21](https://github.com/yjeongyjeong/springProject/assets/147116001/dcbd3dd4-3971-42d3-9374-e9c21600e450)
+<details>
+  <summary>
+항공편
+  </summary>
+  
+* 편도/왕복 선택 검색
+* 검색어 자동완성
+* 조회 항공편 부재시 가까운 항공편 조회 가능
+* 항공편 운항 상태 확인
+* 좌석 선택 시 예약 페이지 이동
+* 결제 시 마일리지 및 카카오 포인트 사용 가능
+* 결제 후 카카오톡으로 메세지 발송 가능
+</details>
 
-![Slide22](https://github.com/yjeongyjeong/springProject/assets/147116001/fb9a2329-e0a0-43e8-9b03-26ce1a172cf6)
+<details>
+  <summary>
+    공지사항 게시판
+  </summary>
+* 페이징 및 검색 기능
+* 조회수
+* 게시글 작성 시 일반, 긴급, 팝업 분류
+* 파일 첨부 가능
+</details>
 
-![Slide23](https://github.com/yjeongyjeong/springProject/assets/147116001/acea52bd-b1dc-4d89-8fa8-59fc3a0a6110)
+<details>
+  <summary>
+Q&A 게시판
+  </summary>
+* 페이징 및 검색 기능
+* 조회수
+* 본인만 삭제 가능, 관리자만 답변 가능
+</details>
 
-![Slide24](https://github.com/yjeongyjeong/springProject/assets/147116001/9e69ef39-007c-44ce-8eb0-094673bddc64)
+<details>
+  <summary>
+여행일기 게시판
+  </summary>
+* 페이징 및 검색 기능
+* 조회수
+* 회원의 경우 댓글과 추천 가능
+</details>
 
-![Slide25](https://github.com/yjeongyjeong/springProject/assets/147116001/54d2fdc8-9a2c-4a90-b5d3-b648ca6e29e0)
-
-![Slide26](https://github.com/yjeongyjeong/springProject/assets/147116001/bb78e520-8c65-4c7f-b4db-d450d30198f5)
-
-![Slide27](https://github.com/yjeongyjeong/springProject/assets/147116001/38a8c9b7-2c83-43c0-8335-0356508dd976)
-
-![Slide28](https://github.com/yjeongyjeong/springProject/assets/147116001/fbfa6314-64e3-4af0-98c9-9e40a8335d93)
-
-![Slide29](https://github.com/yjeongyjeong/springProject/assets/147116001/5ac7342a-0467-4e82-96c8-fdc662277668)
-
-![Slide30](https://github.com/yjeongyjeong/springProject/assets/147116001/ab55c5e8-5fe5-4107-8e91-bc8b060b4432)
+<details>
+  <summary>
+이벤트 게시판
+  </summary>
+* 페이징 및 검색 기능
+* 조회수
+* 파일 첨부 가능
+* 지난 이벤트 확인 가능
+* 리스트/그리드형 표시
+* 썸네일
 </details>
 
 ***

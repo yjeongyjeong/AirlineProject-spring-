@@ -261,8 +261,9 @@ Diagram
  
 <details>
   <summary>
-    Class : home/join/myPage/searchAndReservation/board/Diary
+    Class : home / join / myPage / searchAndReservation / board / Diary
 </summary>
+	
 ClassDiagram_home
 ![ClassDiagram_home](https://github.com/yjeongyjeong/springProject/assets/147116001/758fb6f0-bd46-462e-b327-d15d23fc89c3)
 

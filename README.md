@@ -412,8 +412,8 @@ Q&A 게시판
   <summary>
 게시판 : QnA 게시판
   </summary>
-
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/9587272a-d565-46f8-a63e-4232a5c10727  
+  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/ae88fc97-2313-40a5-8405-24b5310d6627
   
 </details>  
 
@@ -422,7 +422,7 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/9587272
 게시판 : 공지사항
   </summary>
 
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/ae88fc97-2313-40a5-8405-24b5310d6627  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/9ab4401f-7dfc-4b1b-91f4-3c49b788bb2f  
   
 </details>  
 
@@ -431,7 +431,7 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/ae88fc9
 마이페이지(관리자)
   </summary>
 
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/9ab4401f-7dfc-4b1b-91f4-3c49b788bb2f  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/1c96d480-273e-4f4a-988c-c1a5123c58a4  
   
 </details>  
 
@@ -440,7 +440,8 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/9ab4401
 마이페이지(유저)
   </summary>
 
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/1c96d480-273e-4f4a-988c-c1a5123c58a4  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/6b3fb71c-61de-4cb7-a7f9-91239257ef45  
+
   
 </details>  
 
@@ -448,8 +449,8 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/1c96d48
   <summary>
 상담톡
   </summary>
-
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/6b3fb71c-61de-4cb7-a7f9-91239257ef45  
+  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/47fa47f6-ff49-4f7c-8242-585bc745acfd  
   
 </details>  
 
@@ -457,8 +458,8 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/6b3fb71
   <summary>
 아이디찾기
   </summary>
-
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/47fa47f6-ff49-4f7c-8242-585bc745acfd  
+  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/3c2e3fb1-1efa-43be-8de4-f92786e9b2e1  
   
 </details>  
 
@@ -466,8 +467,8 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/47fa47f
   <summary>
 여행일기
   </summary>
-
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/3c2e3fb1-1efa-43be-8de4-f92786e9b2e1  
+  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/13835b48-3059-4d85-8b16-d42f2a8710c4  
   
 </details>  
 
@@ -475,8 +476,8 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/3c2e3fb
   <summary>
 항공권 예약 및 결제
   </summary>
-
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/13835b48-3059-4d85-8b16-d42f2a8710c4  
+  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/cdb6ee9b-d2fe-435d-ba91-80239cf164c4  
   
 </details>  
 
@@ -485,7 +486,7 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/13835b4
 운임정책, 등급, contact
   </summary>
 
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/cdb6ee9b-d2fe-435d-ba91-80239cf164c4  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/443cef84-f679-480e-b1d6-eda6026c9798  
   
 </details>  
 
@@ -493,8 +494,8 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/cdb6ee9
   <summary>
 이벤트 게시판
   </summary>
-
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/443cef84-f679-480e-b1d6-eda6026c9798  
+  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/b1e4cf7a-6788-4cc5-b68a-697bf04251e4    
   
 </details>  
 
@@ -503,7 +504,7 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/443cef8
 출도착 조회
   </summary>
 
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/b1e4cf7a-6788-4cc5-b68a-697bf04251e4  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/d86d4e28-0a86-40dd-aa80-243fa650c371    
   
 </details>  
 
@@ -511,8 +512,8 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/b1e4cf7
   <summary>
 카카오 로그인
   </summary>
-
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/d86d4e28-0a86-40dd-aa80-243fa650c371  
+  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/ba67b95a-53e1-4492-a040-2b9233fc125a  
   
 </details>  
 
@@ -527,10 +528,10 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/9622232
 
 <details>
   <summary>
-헤더
+헤더 및 메인페이지
   </summary>
-
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/ba67b95a-53e1-4492-a040-2b9233fc125a  
+  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/ce8d420c-6eb8-49ef-baa6-28f5ca03fd7e  
   
 </details>  
 
@@ -547,8 +548,8 @@ https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/26e327f
   <summary>
 휴면계정처리
   </summary>
-
-https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/ce8d420c-6eb8-49ef-baa6-28f5ca03fd7e  
+  
+https://github.com/yjeongyjeong/AirlineProject-eclipse-/assets/147116001/9587272a-d565-46f8-a63e-4232a5c10727    
   
 </details>  
 

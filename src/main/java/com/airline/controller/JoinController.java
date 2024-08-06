@@ -126,7 +126,7 @@ public class JoinController {
 				MailHandler sendMail = new MailHandler(mailSender);
 				sendMail.setSubject("카카오 항공 인증 메일입니다.");
 				sendMail.setText("<h3>카카오 항공을 찾아주셔서 감사합니다.</h3>" + "<br>아래 확인 버튼을 눌러서 인증을 완료해 주시기 바랍니다."
-						+ "<br><br><a href='http://192.168.0.19:8081/join/getUserId" + "/" + email + "/" + mail_key
+						+ "<br><br><a href='http://localhost:8081/join/getUserId" + "/" + email + "/" + mail_key
 						+ "' target='_blank'>이메일 인증 확인</a>");
 				sendMail.setFrom("systemlocal99@gmail.com", "카카오 항공");
 				sendMail.setTo(email);
@@ -191,7 +191,7 @@ public class JoinController {
 				MailHandler sendMail = new MailHandler(mailSender);
 				sendMail.setSubject("카카오 항공 인증 메일입니다.");
 				sendMail.setText("<h3>카카오 항공을 찾아주셔서 감사합니다.</h3>" + "<br>아래의 임시 비밀번호로 로그인 후 비밀번호 변경 부탁드립니다." + "<h3>"
-						+ mail_key + "</h3>" + "<br><br><a href='http://192.168.0.19:8081/login"
+						+ mail_key + "</h3>" + "<br><br><a href='http://localhost:8081/login"
 						+ "' target='_blank'>로그인</a>");
 				sendMail.setFrom("systemlocal99@gmail.com", "카카오 항공");
 				sendMail.setTo(email);
@@ -373,7 +373,7 @@ public class JoinController {
 
 	// 카카오 로그인 구현
 	@GetMapping("/kakao")
-	@CrossOrigin(origins = "http://192.168.0.19:8081/join/kakao")
+	@CrossOrigin(origins = "http://localhost:8081/join/kakao")
 	public String kakaoLogin(@RequestParam(value = "code", required = false) String code, Model model,
 			HttpServletRequest request, HttpServletResponse response, RedirectAttributes attr) throws Throwable {
 		System.out.println("kakao controller타는중~~~(join에서 get)");
@@ -599,7 +599,7 @@ public class JoinController {
 
 //http://192.168.0.19:8081/login
 	@GetMapping("/error/accessError")
-	@CrossOrigin("http://192.168.0.19:8081/error/accessError")
+	@CrossOrigin("http://localhost:8081/error/accessError")
 	public void accessError() {
 
 	}
@@ -658,7 +658,7 @@ public class JoinController {
 				MailHandler sendMail = new MailHandler(mailSender);
 				sendMail.setSubject("카카오 항공 인증 메일입니다.");
 				sendMail.setText("<h3>카카오 항공을 찾아주셔서 감사합니다.</h3>" + "<br>아래 확인 버튼을 눌러서 인증을 완료해 주시기 바랍니다."
-						+ "<br><br><a href='http://192.168.0.19:8081/join/updateEnabled" + "/" + email + "/" + mail_key
+						+ "<br><br><a href='http://localhost:8081/join/updateEnabled" + "/" + email + "/" + mail_key
 						+ "' target='_blank'>이메일 인증 확인</a>");
 				sendMail.setFrom("systemlocal99@gmail.com", "카카오 항공");
 				sendMail.setTo(email);

@@ -428,7 +428,7 @@ public class FlightController {
 		String grant_type = code;
 		String url = "https://kauth.kakao.com/oauth/token";
 		//String url = "https://kapi.kakao.com/v2/api/talk/memo/default/send";
-		String redirect_url = "http://192.168.0.19:8081/flight/oath";
+		String redirect_url = "http://localhost:8081/flight/oath";
 		String rest_api_key="607caeca9f2a0089b46f99c667e0dee3";
 //		Map<String, String> jsonData = new HashMap<String, String>();
 //		jsonData.put("grant_type", grant_type);

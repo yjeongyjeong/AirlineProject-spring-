@@ -163,7 +163,7 @@
 											<c:choose>
 												<c:when test="${fn:contains(loginUser.userId, '@')}">
 													<li><a class="logout"
-														href="https://kauth.kakao.com/oauth/logout?client_id=607caeca9f2a0089b46f99c667e0dee3&logout_redirect_uri=http://192.168.0.19:8081/logout">kakaologout</a></li>
+														href="https://kauth.kakao.com/oauth/logout?client_id=607caeca9f2a0089b46f99c667e0dee3&logout_redirect_uri=http://localhost:8081/logout">kakaologout</a></li>
 												</c:when>
 												<c:otherwise>
 													<li><a class="logout" href="/logout" style="color: black; font-size: 18px;"><strong>logout</strong></a></li>

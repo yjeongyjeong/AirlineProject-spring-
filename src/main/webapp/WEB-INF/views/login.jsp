@@ -71,7 +71,7 @@ if (cookies != null && cookies.length > 0)
 						<input type="checkbox" id="remember-me" name="remember-me"
 							class="form-control" style="display: inline; width: auto;" />
 						&nbsp;&nbsp;&nbsp;&nbsp; <a style="margin-left: 285px"
-							href="https://kauth.kakao.com/oauth/authorize?client_id=607caeca9f2a0089b46f99c667e0dee3&redirect_uri=http://192.168.0.19:8081/join/kakao&response_type=code&scope=account_email,name,gender,birthday,phone_number,profile_nickname&prompt=login">
+							href="https://kauth.kakao.com/oauth/authorize?client_id=607caeca9f2a0089b46f99c667e0dee3&redirect_uri=http://localhost:8081/join/kakao&response_type=code&scope=account_email,name,gender,birthday,phone_number,profile_nickname&prompt=login">
 							<img alt="kakao_login"
 							src="../resources/img/kakao/kakao_login_small.png">
 						</a>

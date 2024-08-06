@@ -19,12 +19,12 @@
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName"
 			value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
+		<property name="jdbcUrl"
+			value="jdbc:log4jdbc:mysql://localhost:3306/airlineproject?serverTimezone=UTC&amp;verifyServerCertificate=false&amp;useSSL=false"></property>
 		<!-- <property name="driverClassName" value="net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegatorCopy"></property> -->
 		<!-- <property name="jdbcUrl" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:xe"></property> -->
-		<property name="jdbcUrl"
-			value="jdbc:log4jdbc:mysql://180.67.202.247:3306/project?serverTimezone=UTC&amp;verifyServerCertificate=false&amp;useSSL=false"></property>
-		<property name="username" value="project"></property>
-		<property name="password" value="project"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="yjeong"></property>
 	</bean>
 
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource"

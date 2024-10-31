@@ -1,7 +1,5 @@
 package com.airline.controller;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
-
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -85,11 +83,17 @@ public class HomeController {
 	
 	//메인화면
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Model model, Criteria cri) {		
-		model.addAttribute("emer", noticeService.noticePopup(cri));
+	public String home(Model model, Criteria cri) {
+		
+		List<BoardNoticeVO> emer = noticeService.noticePopup(cri);
+		if(emer != null) {
+			model.addAttribute("emer", noticeService.noticePopup(cri));
+		}
 		FlightVO popupVO = adminService.flightNoticePopup();
-		model.addAttribute("modi", popupVO);
-		model.addAttribute("info", adminService.getFlightInfo(popupVO.getFno()));
+		if(popupVO != null) {
+			model.addAttribute("modi", popupVO);
+			model.addAttribute("info", adminService.getFlightInfo(popupVO.getFno()));			
+		}
     
 		//이벤트 슬라이더용 8개만 출력.
 		Criteria criEvent = new Criteria();
@@ -155,9 +159,8 @@ public class HomeController {
 		return "home";
 	}
 	
-	//로그인->spring 페이지로 뺄까..?
 	@GetMapping("/login")
-	@PreAuthorize("isAnonymous()") //로그인한경우 login페이지에 접근하지 못하게 하려했으나 에러페이지로 넘어가는 문제 발생..
+	@PreAuthorize("isAnonymous()") 
 	public void login(String error, String logout, Model model, HttpServletRequest request, HttpSession session) {
 		log.info("error>>"+error);
 		log.info("logout>>"+logout);

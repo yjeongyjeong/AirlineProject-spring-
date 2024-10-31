@@ -838,8 +838,8 @@
 				    },
 				    
 				    
-				    "minDate": "2023-12-01",
-				    "maxDate": "2024-02-28"
+				    "minDate": "2024-10-01",
+				    "maxDate": "2024-12-31"
 			});
 		});
 
@@ -881,8 +881,8 @@
 			        ],
 			        "firstDay": 1
 			    },
-			    "minDate": "2023-12-01",
-			    "maxDate": "2024-02-28"
+			    "minDate": "2024-10-01",
+			    "maxDate": "2024-12-31"
 		});
 	</script>
 	<script type="text/javascript">

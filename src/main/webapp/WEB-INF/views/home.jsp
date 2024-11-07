@@ -770,14 +770,12 @@
 		</div>
 	</div>
 
-
-	<!-- 모달창 -->
-	<jsp:include page="/WEB-INF/views/NoticePopup.jsp"/>   
-	<!-- /모달창 -->
-	
-	<!-- 모달창 -->
-	 <jsp:include page="/WEB-INF/views/FlightPopup.jsp"/>   
-	<!-- /모달창 -->
+	<c:if test="${!empty modi}">
+	    <c:import url="/WEB-INF/views/NoticePopup.jsp"/>
+	</c:if>
+	<c:if test="${!empty emer}">
+	    <c:import url="/WEB-INF/views/FlightPopup.jsp"/>
+	</c:if>
 	
 	<!-- .tm-container-outer -->
 	<%@ include file="includes/footer.jsp"%>

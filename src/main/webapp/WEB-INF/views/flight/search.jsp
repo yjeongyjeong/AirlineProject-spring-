@@ -602,8 +602,8 @@ p.btn.btn-default {
 			    },
 			    
 			    
-			    "minDate": "2023-12-01",
-			    "maxDate": "2024-02-28"
+			    "minDate": "2024-10-01",
+			    "maxDate": "2024-12-31"
 		});
 	});
 	
@@ -646,8 +646,8 @@ p.btn.btn-default {
 		        ],
 		        "firstDay": 1
 		    },
-		    "minDate": "2023-12-01",
-		    "maxDate": "2024-02-28"
+		    "minDate": "2024-10-01",
+		    "maxDate": "2024-12-31"
 	});
 	
 	$jLatest('input[id="arrDate"]').daterangepicker({

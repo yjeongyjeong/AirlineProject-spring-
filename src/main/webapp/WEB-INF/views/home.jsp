@@ -770,13 +770,13 @@
 		</div>
 	</div>
 
-	<c:if test="${!empty modi}">
+	<c:if test="${!empty emer}">
 	    <c:import url="/WEB-INF/views/NoticePopup.jsp"/>
 	</c:if>
-	<c:if test="${!empty emer}">
+	<c:if test="${!empty modi}">
 	    <c:import url="/WEB-INF/views/FlightPopup.jsp"/>
 	</c:if>
-	
+		
 	<!-- .tm-container-outer -->
 	<%@ include file="includes/footer.jsp"%>
 	<!-- 충돌부분 추가 -->
